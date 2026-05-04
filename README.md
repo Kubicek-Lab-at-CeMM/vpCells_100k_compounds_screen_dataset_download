@@ -1,4 +1,4 @@
-# vpCells 100k compounds screen with pool of 7 clones dataset
+# vpCells dataset: 100k compounds screen with pool of 7 clones
 
 The 105k screen dataset comprises 325 measurements, each corresponding to one 384-well microplate. For each measurement, three files are provided:
 1. Data zip file (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip`)
