@@ -7,7 +7,7 @@ The 105k screen dataset comprises 325 measurements, each corresponding to one 38
 
 
 ### Experimental conditions
-Cells were imaged 6 hours after treatment with an Opera Phenix high-content confocal microscopy system with water immersion objective (40× magnification), capturing 5-channel images at 1,080 × 1,080 pixel resolution. We imaged 5 fields of view (FOVs) per well, with the exception of an initial batch of plates (2340001 through 2340011, with 3 FOVs per well).
+Cells were imaged 6 hours after compound treatment with an Opera Phenix high-content confocal microscopy system with water immersion objective (40× magnification), capturing 5-channel images at 1,080 × 1,080 pixel resolution. We imaged 5 fields of view (FOVs) per well, with the exception of an initial batch of plates (2340001 through 2340011, with 3 FOVs per well).
 
 ![image.png](../testik.jpg)
 
