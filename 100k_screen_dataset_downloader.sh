@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 #
-# 105k_screen_dataset_downloader
+# 100k_screen_dataset_downloader
 #
-# Downloads the 105k Library Screen dataset (~12 TB, 325 parts) from Azure Blob Storage.
+# Downloads the 100k Library Screen dataset (~12 TB, 325 parts) from Azure Blob Storage.
 # Each part consists of a .zip data file, a .zip.filelist, and a .zip.sha256 checksum file.
 #
 # Usage:
-#   ./105k_screen_dataset_downloader -o /path/to/output [OPTIONS]
+#   ./100k_screen_dataset_downloader -o /path/to/output [OPTIONS]
 #
 # Options:
 #   -o, --output-dir DIR    Download destination (required)
 #   -p, --parts-file FILE   File containing .zip URLs, one per line
-#                            (default: 105k_screen_measurements_urls.txt next to this script)
+#                            (default: 100k_screen_measurements_urls.txt next to this script)
 #   -j, --parallel N        Number of parallel downloads (default: 1)
 #   -s, --skip-verify       Skip SHA-256 verification after download
 #   -r, --range START,END   Download only parts in the given 1-indexed range (e.g. 1,50)
@@ -38,11 +38,11 @@ log_error() { printf "[ERROR] %s\n" "$*" >&2; }
 usage() {
     cat <<'EOF'
 Usage:
-  ./105k_screen_dataset_downloader -o /path/to/output [OPTIONS]
+  ./100k_screen_dataset_downloader -o /path/to/output [OPTIONS]
 Options:
   -o, --output-dir DIR    Download destination (required)
   -p, --parts-file FILE   File containing .zip URLs, one per line
-                           (default: 105k_screen_measurements_urls.txt next to this script)
+                           (default: 100k_screen_measurements_urls.txt next to this script)
   -j, --parallel N        Number of parallel downloads (default: 1)
   -s, --skip-verify       Skip SHA-256 verification after download
   -r, --range START,END   Download only parts in the given 1-indexed range (e.g. 1,50)
@@ -101,7 +101,7 @@ fi
 # ─── Locate parts file ───────────────────────────────────────────────────────
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 if [[ -z "$PARTS_FILE" ]]; then
-    PARTS_FILE="${SCRIPT_DIR}/105k_screen_measurements_urls.txt"
+    PARTS_FILE="${SCRIPT_DIR}/100k_screen_measurements_urls.txt"
 fi
 if [[ ! -f "$PARTS_FILE" ]]; then
     log_error "Parts file not found: $PARTS_FILE"
@@ -237,7 +237,7 @@ download_part() {
 }
 # ─── Summary ─────────────────────────────────────────────────────────────────
 echo ""
-echo "=== 105k Library Screen Dataset Downloader ==="
+echo "=== 100k Library Screen Dataset Downloader ==="
 echo ""
 echo "  Output directory : ${OUTPUT_DIR}"
 echo "  Parts to download: ${NUM_PARTS} / ${TOTAL_PARTS}"

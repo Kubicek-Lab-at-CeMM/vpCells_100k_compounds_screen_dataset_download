@@ -1,4 +1,4 @@
-# vpCells dataset: 100k compounds screen with pool of 7 clones
+# Dataset: morphological profiling of 100,000 compounds with vpCell pool of 7 clones
 
 The 105k screen dataset comprises **325 measurements**, each corresponding to one 384-well microplate. For each measurement, three files are provided:
 1. Data zip file (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip`)
@@ -9,7 +9,7 @@ The 105k screen dataset comprises **325 measurements**, each corresponding to on
 ### Experimental conditions
 Cells were imaged 6 hours after compound treatment with an Opera Phenix high-content confocal microscopy system with water immersion objective (40× magnification), capturing 5-channel images at 1,080 × 1,080 pixel resolution. We imaged 5 fields of view (FOVs) per well, with the exception of an initial batch of plates (2340001 through 2340011, with 3 FOVs per well).
 
-![image.png](../testik.jpg)
+![vpCells pool of 7](images/clones_pool.jpg)
 
 ### Contents of each measurement folder
 - `Images`: raw images
