@@ -1,7 +1,7 @@
 # Dataset: morphological profiling of >100,000 compounds with vpCell pool of 7 clones
 
 ![vpCells pool of 7](images/clones_pool.jpg)
-![chemical compound library](images/clones_pool.jpg)
+![chemical compound library](images/library.jpg)
 
 The [Kubicek Lab](https://cemm.at/research/groups/core-groups/stefan-kubicek/research) at the CeMM (Vienna, Austria) has generated a large morphological profiling dataset of over 100,000 chemical perturbations profiled against a pool of seven multicolor-labeled clones (HAP1 cell line).
 
