@@ -1,10 +1,10 @@
 # Dataset: morphological profiling of >100,000 compounds with vpCell pool of 7 clones
 
-This repository contains download instructions for a morphological profiling dataset of over 100,000 chemical perturbations screened against a pool of seven multicolor-labeled clones. The data was generated at the [Kubicek Lab](https://cemm.at/research/groups/core-groups/stefan-kubicek/research) and the Molecular Discovery Platform at CeMM in Vienna, Austria. A full description and analysis are provided in the manuscript "High-throughput vpCells phenotyping for target-specific and global effects of 100,000 compounds," which is currently under revision.
+This repository contains download instructions for a morphological profiling dataset of over 100,000 chemical perturbations screened against a pool of seven multicolor-labeled clones. The data was generated at the [Kubicek Lab](https://cemm.at/research/groups/core-groups/stefan-kubicek/research) and the Molecular Discovery Platform at CeMM in Vienna, Austria. A full description of the experiment and analysis will be provided in the manuscript "High-throughput vpCells phenotyping for target-specific and global effects of 100,000 compounds," which is currently under revision.
 
 &nbsp;
 
-![vpCells pool of 7](images/clones_pool.jpg)
+![vpCells pool of 7](images/example_FOVs.jpg)
 ![chemical compound library](images/library.jpg)
 
 The dataset comprises **325 measurements**, each corresponding to one 384-well microplate. For each measurement, three files are provided:
