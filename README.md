@@ -1,8 +1,8 @@
 # Dataset: morphological profiling of >100,000 compounds with vpCell pool of 7 clones
 
-This repository contains download instructions for a morphological profiling dataset of over 100,000 chemical perturbations screened against a pool of seven multicolor-labeled clones. The data was generated at the [Kubicek Lab](https://cemm.at/research/groups/core-groups/stefan-kubicek/research) and the Molecular Discovery Platform at CeMM in Vienna, Austria. A full description of the experiment and analysis will be provided in the manuscript "High-throughput vpCells phenotyping for target-specific and global effects of 100,000 compounds," which is currently under revision.
+This repository contains download instructions for a morphological profiling dataset of over 100,000 chemical perturbations screened against a pool of seven multicolor-labeled clones. The data was generated at the [Kubicek Lab](https://cemm.at/research/groups/core-groups/stefan-kubicek/research) and the Molecular Discovery Platform at CeMM in Vienna, Austria. A full description of the analysis will be provided in the manuscript "High-throughput vpCells phenotyping for target-specific and global effects of 100,000 compounds," which is currently under revision.
 
-&nbsp;
+<!-- &nbsp; -->
 
 ![vpCells pool of 7](images/example_FOVs.jpg)
 ![chemical compound library](images/library.jpg)
@@ -12,18 +12,26 @@ The dataset comprises **325 measurements**, each corresponding to one 384-well m
 2. Filelist with names of folders/files in the zip file (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip.filelist`)
 3. sha256 checksum of the data zip file  (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip.sha256`)
 
-Dataset statistics:
+#### Dataset statistics:
 - 325 measurements (Opera Phenix imaging runs)
 - 106,720 compound treatments
 - 124,800 wells
 - 615,547 fields of view
 - 83,048,075 cells
 
-### Experimental conditions
+#### Experimental setup
 Cells were imaged 6 hours after compound treatment with an Opera Phenix high-content confocal microscopy system with water immersion objective (40× magnification), capturing 5-channel images at 1,080 × 1,080 pixel resolution. We imaged 5 fields of view (FOVs) per well, with the exception of an initial batch of plates (2340001 through 2340011, with 3 FOVs per well).
 
+| Channel name (fluorophore) | Description | Channel number (FFC-corrected images folder, analysis) | Channel number (raw images folder only) |
+| :--- | :--- | :--- | :---- |
+| GFP | Tagged protein of interest   1 | 1 | 3 |
+| mScarlet | Tagged protein of interest 2 | 2 | 5 |
+| BFP | Visual barcode | 3 | 1 |
+| mAmetrine | Membrane marker | 4 | 2 |
+| miRFP | Nuclear marker | 5 | 4 |
 
-### Contents of each measurement folder
+
+#### Contents of each measurement folder
 - `Images`: raw images
     - one tiff file for each image and channel, with the following naming convention (listing relevant fields only):
     - example: `r11c06f04p01-ch3sk1fk1fl1.tiff`
@@ -44,16 +52,8 @@ Cells were imaged 6 hours after compound treatment with an Opera Phenix high-con
 - `CellProfiler_measurements`: CellProfiler features extracted for cells and images
 - `Predictions_CellProfiler_RF`: single-cell level clone identity predictions from random forest model calculated from CellProfiler features
 
-| Channel name (fluorophore) | Description | Channel number (FFC-corrected images folder, analysis) | Channel number (raw images folder only) |
-| :--- | :--- | :--- | :---- |
-| GFP | Tagged protein of interest   1 | 1 | 3 |
-| mScarlet | Tagged protein of interest 2 | 2 | 5 |
-| BFP | Visual barcode | 3 | 1 |
-| mAmetrine | Membrane marker | 4 | 2 |
-| miRFP | Nuclear marker | 5 | 4 |
 
-
-## Platemap file
+#### Platemap file
 
 |   well_ID |   plate | measurement                                    | well   |   row |   column | compound   |   AssayConc_uM | Type   | Transfer   | is_control   |   measurement_batch | Sublibrary                                |
 |----------:|--------:|:-----------------------------------------------|:-------|------:|---------:|:-----------|---------------:|:-------|:-----------|:-------------|--------------------:|:------------------------------------------|
