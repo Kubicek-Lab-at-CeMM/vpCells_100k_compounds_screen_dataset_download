@@ -29,6 +29,8 @@ Cells were imaged 6 hours after compound treatment with an Opera Phenix high-con
 | mAmetrine | Membrane marker | 4 | 2 |
 | miRFP | Nuclear marker | 5 | 4 |
 
+Segmentation was performed with cellpose and nuclAIzer, features were extracted using CellProfiler. A random forest model was used to predict clone identity based on the CellProfiler features.
+
 
 #### Dataset structure description
 
@@ -60,6 +62,21 @@ Each measurement contains the following folders:
 
 
 #### Platemap file
+
+The platemap file specifies which compound treatments were carried out. A sample of rows is in the table below. The file contains the following fields:
+- `well_ID`: unique number of row
+- `plate`: number assigned to the 384-well microplate
+- `measurement`: measurement name, contains the plate number and timestamp
+- `well`: position within the plate
+- `row`: row number of the well 
+- `column`:  column number of the well
+- `compound`: name of the compound
+- `AssayConc_uM`: concentration of the compound in micromolar
+- `Type`: well type - either screening compound (Cpd), DMSO negative control (DMSO), positive control dBET6 (PosCon), no treatment control (NoTreatment)
+- `Transfer`: indicated whether compound was successfully transferred to the screening plate, YES/NO
+- `is_control`: indicates if well is a control
+- `measurement_batch`: batch number of the measurement
+- `Sublibrary`: describes which subset of the library the compound belongs to
 
 |   well_ID |   plate | measurement                                    | well   |   row |   column | compound   |   AssayConc_uM | Type   | Transfer   | is_control   |   measurement_batch | Sublibrary                                |
 |----------:|--------:|:-----------------------------------------------|:-------|------:|---------:|:-----------|---------------:|:-------|:-----------|:-------------|--------------------:|:------------------------------------------|
