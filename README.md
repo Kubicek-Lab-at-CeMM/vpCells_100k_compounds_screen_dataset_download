@@ -25,6 +25,7 @@ Cells were imaged 6 hours after compound treatment with an Opera Phenix high-con
 | mAmetrine | Membrane marker | 4 | 2 |
 | miRFP | Nuclear marker | 5 | 4 |
 
+![screen setup](images/screen_setup.jpg)
 
 #### Dataset structure description
 
