@@ -65,7 +65,7 @@ The dataset comprises **325 measurements**, each corresponding to one 384-well m
 
 ### Metadata file
 
-The metadata ![file](100k_screen_dataset_metadata.csv) specifies which compound treatments were carried out. The table below shows a tiny sample. The file contains the following fields:
+The metadata ![file](100k_screen_dataset_metadata.csv) specifies which compound treatments were carried out. A small sample is shown in the table below. The metadata file contains the following fields:
 - `well_ID`: unique number of row
 - `plate`: number assigned to the 384-well microplate
 - `measurement`: measurement name, contains the plate number and timestamp
@@ -74,7 +74,7 @@ The metadata ![file](100k_screen_dataset_metadata.csv) specifies which compound 
 - `column`:  column number of the well
 - `compound`: name of the compound
 - `AssayConc_uM`: concentration of the compound in micromolar
-- `Type`: well type - either screening compound (Cpd), DMSO negative control (DMSO), positive control dBET6 (PosCon), no treatment control (NoTreatment)
+- `Type`: well type - either screening compound (*Cpd*), DMSO negative control (*DMSO*), positive control dBET6 (*PosCon*), no treatment control (*NoTreatment*)
 - `Transfer`: indicated whether compound was successfully transferred to the screening plate, YES/NO
 - `is_control`: indicates if well is a control
 - `measurement_batch`: batch number of the measurement
