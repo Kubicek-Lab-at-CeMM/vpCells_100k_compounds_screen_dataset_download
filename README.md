@@ -24,11 +24,11 @@ HAP1 cells were imaged 6 hours after compound treatment with an Opera Phenix hig
 | :--- | :--- | :--- | :---- |
 | GFP | Tagged protein of interest   1 | 1 | 3 |
 | mScarlet | Tagged protein of interest 2 | 2 | 5 |
-| BFP | Visual barcode | 3 | 1 |
+| BFP | Visual barcode / organelle marker | 3 | 1 |
 | mAmetrine | Membrane marker | 4 | 2 |
 | miRFP | Nuclear marker | 5 | 4 |
 
-Our pooled vpCells approach to morphological profiling differs from traditional protocols like Cell Painting: instead of applying the same set of dyes to all assayed cells, we profile a heterogeneous population of cells consisting of 7 clones, each expressing multiple fluorescently labeled proteins. This represents a large increase in information content: we capture the effects of compounds on 14 fluorescent fusion proteins and 8 organelle markers expressed by the cells. However, our approach requires a demultiplexing step - we use a random forest model trained on CellProfielr features to assign clone labels to detected cells.
+Our pooled vpCells approach to morphological profiling differs from traditional protocols like Cell Painting: instead of applying the same set of dyes to all assayed cells, we profile a heterogeneous population of cells consisting of 7 clones, each expressing multiple fluorescently labeled proteins. This represents a large increase in information content: we capture the effects of compounds on 14 fluorescent fusion proteins and 8 organelle markers expressed by the cells. However, our approach requires a demultiplexing step - we use a random forest model trained on CellProfiler features to assign clone labels to detected cells.
 
 ![screen setup](images/clones_pool.jpg)
 
@@ -41,7 +41,7 @@ The dataset comprises **325 measurements**, each corresponding to one 384-well m
 2. Filelist with names of folders/files in the zip file (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip.filelist`)
 3. sha256 checksum of the data zip file  (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip.sha256`)
 
-Each measurement contains the following folders:
+##### Each measurement contains the following folders:
 - `Images`: raw images
     - one tiff file for each image and channel, with the following naming convention (listing relevant fields only):
     - example: `r11c06f04p01-ch3sk1fk1fl1.tiff`
