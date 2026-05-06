@@ -65,7 +65,7 @@ The dataset comprises **325 measurements**, each corresponding to one 384-well m
 
 ### Metadata file
 
-The metadata file specifies which compound treatments were carried out. The table below shows a tiny sample. The file contains the following fields:
+The metadata ![file](100k_screen_dataset_metadata.csv) specifies which compound treatments were carried out. The table below shows a tiny sample. The file contains the following fields:
 - `well_ID`: unique number of row
 - `plate`: number assigned to the 384-well microplate
 - `measurement`: measurement name, contains the plate number and timestamp
