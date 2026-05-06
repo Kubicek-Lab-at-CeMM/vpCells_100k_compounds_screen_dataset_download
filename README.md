@@ -7,11 +7,6 @@ This repository contains download instructions for a morphological profiling dat
 ![vpCells pool of 7](images/example_FOVs.jpg)
 ![chemical compound library](images/library.jpg)
 
-The dataset comprises **325 measurements**, each corresponding to one 384-well microplate. For each measurement, three files are provided:
-1. Data zip file (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip`)
-2. Filelist with names of folders/files in the zip file (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip.filelist`)
-3. sha256 checksum of the data zip file  (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip.sha256`)
-
 #### Dataset statistics:
 - 325 measurements (Opera Phenix imaging runs)
 - 106,720 compound treatments
@@ -20,7 +15,7 @@ The dataset comprises **325 measurements**, each corresponding to one 384-well m
 - 83,048,075 cells
 
 #### Experimental setup
-Cells were imaged 6 hours after compound treatment with an Opera Phenix high-content confocal microscopy system with water immersion objective (40× magnification), capturing 5-channel images at 1,080 × 1,080 pixel resolution. We imaged 5 fields of view (FOVs) per well, with the exception of an initial batch of plates (2340001 through 2340011, with 3 FOVs per well).
+Cells were imaged 6 hours after compound treatment with an Opera Phenix high-content confocal microscopy system with water immersion objective (40× magnification), capturing images at 1,080 × 1,080 pixel resolution. We imaged 5 fields of view (FOVs) per well, with the exception of an initial batch of plates (2340001 through 2340011, with 3 FOVs per well). For each field of view, we imaged five fluorescent channels:
 
 | Channel name (fluorophore) | Description | Channel number (FFC-corrected images folder, analysis) | Channel number (raw images folder only) |
 | :--- | :--- | :--- | :---- |
@@ -31,7 +26,14 @@ Cells were imaged 6 hours after compound treatment with an Opera Phenix high-con
 | miRFP | Nuclear marker | 5 | 4 |
 
 
-#### Contents of each measurement folder
+#### Dataset structure description
+
+The dataset comprises **325 measurements**, each corresponding to one 384-well microplate. For each measurement, three files are provided:
+1. Data zip file (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip`)
+2. Filelist with names of folders/files in the zip file (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip.filelist`)
+3. sha256 checksum of the data zip file  (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip.sha256`)
+
+Each measurement contains the following folders:
 - `Images`: raw images
     - one tiff file for each image and channel, with the following naming convention (listing relevant fields only):
     - example: `r11c06f04p01-ch3sk1fk1fl1.tiff`
