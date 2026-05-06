@@ -41,7 +41,7 @@ The dataset comprises **325 measurements**, each corresponding to one 384-well m
 2. Filelist with names of folders/files in the zip file (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip.filelist`)
 3. sha256 checksum of the data zip file  (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip.sha256`)
 
-##### Each measurement contains the following folders:
+#### Each measurement contains the following folders:
 - `Images`: raw images
     - one tiff file for each image and channel, with the following naming convention (listing relevant fields only):
     - example: `r11c06f04p01-ch3sk1fk1fl1.tiff`
@@ -51,7 +51,7 @@ The dataset comprises **325 measurements**, each corresponding to one 384-well m
         - `ch3`: channel 3
     - please note that channels were assigned new numbers in the analysis, for legacy reasons
 - `FFC_Profile`: contains an XML file with parameters for flatfield correction
-- `Images_FFC`:  flatfield-corrected images in tiff format, generated with the Harmony software provided by the instrument manufacturer (Revvity)
+- `Images_FFC`:  flatfield-corrected images in tiff format, generated with the Harmony software provided by the instrument manufacturer (Revvity); the algorithm is described ![here](https://onlinelibrary.wiley.com/doi/10.1111/jmi.12404).
     - please note that channel numbers here differ from those in the raw images folder (see table above)
 - `Images_segmented`: segmentation masks in png format
     - `ch4sk1fk1fl1_segmented_mask.png`: cellpose segmentation masks of entire cells from membrane marker (channel 4, mAmetrine)
