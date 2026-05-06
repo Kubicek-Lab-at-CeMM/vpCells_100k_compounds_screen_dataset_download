@@ -32,7 +32,7 @@ Our pooled vpCells approach to morphological profiling differs from traditional 
 
 ![screen setup](images/clones_pool.jpg)
 
-Segmentation was performed with cellpose and nucleAIzer, features were extracted using CellProfiler. A random forest model was used to predict clone identity based on the CellProfiler features.
+The data processing pipeline has been published in a [separate GitHub repository](https://github.com/Kubicek-Lab-at-CeMM/vpCells_pool_of_7). Segmentation was performed with cellpose and nucleAIzer, features were extracted using CellProfiler. A random forest model was used to predict clone identity based on the CellProfiler features.
 
 ### Dataset structure description
 
