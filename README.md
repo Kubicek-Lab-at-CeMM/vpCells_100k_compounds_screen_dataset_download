@@ -15,6 +15,10 @@ This repository contains download instructions for a morphological profiling dat
 - 83,048,075 cells
 
 #### Experimental setup
+
+![screen setup](images/screen_setup.jpg)
+
+
 Cells were imaged 6 hours after compound treatment with an Opera Phenix high-content confocal microscopy system with water immersion objective (40× magnification), capturing images at 1,080 × 1,080 pixel resolution. We imaged 5 fields of view (FOVs) per well, with the exception of an initial batch of plates (2340001 through 2340011, with 3 FOVs per well). For each field of view, we imaged five fluorescent channels:
 
 | Channel name (fluorophore) | Description | Channel number (FFC-corrected images folder, analysis) | Channel number (raw images folder only) |
@@ -25,7 +29,6 @@ Cells were imaged 6 hours after compound treatment with an Opera Phenix high-con
 | mAmetrine | Membrane marker | 4 | 2 |
 | miRFP | Nuclear marker | 5 | 4 |
 
-![screen setup](images/screen_setup.jpg)
 
 #### Dataset structure description
 
