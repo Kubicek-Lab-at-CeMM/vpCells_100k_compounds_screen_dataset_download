@@ -28,8 +28,11 @@ Cells were imaged 6 hours after compound treatment with an Opera Phenix high-con
 | mAmetrine | Membrane marker | 4 | 2 |
 | miRFP | Nuclear marker | 5 | 4 |
 
-Segmentation was performed with cellpose and nuclAIzer, features were extracted using CellProfiler. A random forest model was used to predict clone identity based on the CellProfiler features.
+Our pooled vpCells approach to morphological profiling differs from traditional protocols like Cell Painting: instead of applying the same set of dyes to all assayed cells, we profile a heterogeneous population of cells consisting of 7 clones, each expressing multiple fluorescently labeled proteins. This represents a large increase in information content: we capture the effects of compounds on 14 fluorescent fusion proteins and 8 organelle markers expressed by the cells. However, our approach requires a demultiplexing step - we use a random forest model trained on CellProfielr features to assign clone labels to detected cells.
 
+![screen setup](images/clones_pool.jpg)
+
+Segmentation was performed with cellpose and nucleAIzer, features were extracted using CellProfiler. A random forest model was used to predict clone identity based on the CellProfiler features.
 
 #### Dataset structure description
 
