@@ -7,13 +7,13 @@ This repository contains download instructions for a morphological profiling dat
 ![vpCells pool of 7](images/example_FOVs.jpg)
 ![chemical compound library](images/library.jpg)
 
-#### Dataset statistics:
+### Dataset statistics:
 - 325 measurements (Opera Phenix imaging runs)  
 - 124,800 wells = 106,720 screening compound treatments + controls
 - 615,547 fields of view
 - 83,048,075 segmented cells after quality filtering
 
-#### Experimental setup
+### Experimental setup & data processing overview
 
 ![screen setup](images/screen_setup.jpg)
 
@@ -34,7 +34,7 @@ Our pooled vpCells approach to morphological profiling differs from traditional 
 
 Segmentation was performed with cellpose and nucleAIzer, features were extracted using CellProfiler. A random forest model was used to predict clone identity based on the CellProfiler features.
 
-#### Dataset structure description
+### Dataset structure description
 
 The dataset comprises **325 measurements**, each corresponding to one 384-well microplate. For each measurement, three files are provided:
 1. Data zip file (e.g., `2340006__2023-11-17T03_16_52-Measurement_1.zip`)
@@ -63,7 +63,7 @@ Each measurement contains the following folders:
 - `Predictions_CellProfiler_RF`: single-cell level clone identity predictions from random forest model calculated from CellProfiler features
 
 
-#### Platemap file
+### Platemap file
 
 The platemap file specifies which compound treatments were carried out. A sample of rows is in the table below. The file contains the following fields:
 - `well_ID`: unique number of row
