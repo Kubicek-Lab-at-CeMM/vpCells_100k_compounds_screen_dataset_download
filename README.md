@@ -41,10 +41,10 @@ Each measurement contains the following folders:
         - `c06`: column 6 of the plate
         - `f04`: field 4 (imaging position within the well)
         - `ch3`: channel 3
-    - please note that channels were renumbered for the analysis (see table below) 
+    - please note that channels were assigned new numbers in the analysis, for legacy reasons
 - `FFC_Profile`: contains an XML file with parameters for flatfield correction
 - `Images_FFC`:  flatfield-corrected images in tiff format, generated with the Harmony software provided by the instrument manufacturer (Revvity)
-    - please note that channel numbers here differ from those in the raw images folder (see table below)
+    - please note that channel numbers here differ from those in the raw images folder (see table above)
 - `Images_segmented`: segmentation masks in png format
     - `ch4sk1fk1fl1_segmented_mask.png`: cellpose segmentation masks of entire cells from membrane marker (channel 4, mAmetrine)
 	- `ch5sk1fk1fl1_segmented_mask.png`: nuclAIzer segmentation masks of nuclei from nuclear marker (channel 5, miRFP)
