@@ -1,0 +1,11 @@
+# mean features
+https://105kscreendata.blob.core.windows.net/105k-library-phenotypic-profiles/2025-05-28_HAP1_7clones_105k_agg_features_means.csv
+https://105kscreendata.blob.core.windows.net/105k-library-phenotypic-profiles/2025-05-28_HAP1_7clones_105k_agg_features_means.parquet
+
+# mean features, z-scores
+https://105kscreendata.blob.core.windows.net/105k-library-phenotypic-profiles/2025-05-28_HAP1_7clones_105k_agg_features_means__norm_zscore.csv
+https://105kscreendata.blob.core.windows.net/105k-library-phenotypic-profiles/2025-05-28_HAP1_7clones_105k_agg_features_means__norm_zscore.parquet
+
+# mean features, z-scores, adjusted for well position effects
+https://105kscreendata.blob.core.windows.net/105k-library-phenotypic-profiles/2025-05-28_HAP1_7clones_105k_agg_features_means__norm2_diff_mean_iqr.csv
+https://105kscreendata.blob.core.windows.net/105k-library-phenotypic-profiles/2025-05-28_HAP1_7clones_105k_agg_features_means__norm2_diff_mean_iqr.parquet
